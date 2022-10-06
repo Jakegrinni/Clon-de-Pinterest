@@ -1,0 +1,114 @@
+:root{
+    font-family:'Open Sans', sans-serif;
+  }
+
+
+body, html{ 
+padding: 1em;
+background-color: white;
+border: 0;
+padding: 0;
+box-sizing: border-box;
+width: 100vw;
+height: 100vh;
+overflow-x: hidden;
+}
+
+    header {
+   background-color: whitesmoke;
+    display: flex;
+     position:fixed; 
+    align-items: center;
+    width: 100%;
+    gap: 2px;
+  }
+
+    .logo { 
+    height: 50px;
+    width: 50px;
+}
+
+
+    header form{  
+    display: flex;
+    background-color: white;
+    flex: 3; 
+  }
+
+    button,select {padding: 16px;
+    background-color: black;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    opacity: .8;
+    transition: 0.3s;
+  }
+
+  button:hover { background-color: black;
+    color: white;
+   opacity: 2 }
+
+   select:hover { background-color: black;
+    color: white;
+   opacity: 2 }
+
+  .inicio_mobile {
+    display: none;
+  }
+
+  input {
+  
+    padding: 12px;
+    border-radius: 16px;
+     flex:3; 
+  
+  }
+
+   .navbar-pinterest {
+    display: flex;
+  
+  }
+.navbar-pinterest div{ width: 40px;
+height: 40px;
+background-color: whitesmoke;
+gap: 2px;
+text-align: center;
+}
+
+.navbar-pinterest div:hover { 
+  border: 7px;
+  padding: 3px;
+}
+
+
+.card-image {
+    columns: 5 200px;
+    column-gap: 0.5em;
+   
+}
+
+.card-image :hover { opacity: 0.5}
+
+
+img { max-width: 100%;
+margin-bottom: 0.5em;
+border-radius: 10px;
+}
+
+
+
+@media (max-width: 60rem) {
+
+  .inicio_mobil {
+    display: flex;
+  }
+
+  .inicio_desktop{
+    display: none;
+  }
+  .hoy_desktop {
+    display: none;
+  }
+  .crear_desktop{
+    display: none;}
+}
